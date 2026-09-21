@@ -63,13 +63,12 @@ export default function Header() {
                 </SignUpButton>
               </Show>
               <Show when="signed-in">
-                <Button>
-                  <Link href="/submit">
+                <Link href="/submit">
+                  <Button className="flex items-center gap-2">
                     <SparklesIcon className="size-4" />
-                    Submit Project
-                  </Link>
-                </Button>
-
+                    <span>Submit Project</span>
+                  </Button>
+                </Link>
                 <CustomUserButton />
               </Show>
             </Suspense>

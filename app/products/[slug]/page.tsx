@@ -115,25 +115,25 @@ export default async function Product({
                 </div>
                 {voteCount > 100 && (
                   <div className="pt-6 border-t">
-                    <Badge className="w-full justify-center py-2">
+                    <Badge className="w-full justify-center py-4">
                       🔥 Featured Product
                     </Badge>
                   </div>
                 )}
               </div>
               {websiteUrl && (
-                <Button
-                  className="w-full rounded-lg"
-                  variant={"outline"}
+                <a
+                  href={websiteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <a
-                    href={websiteUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Button
+                    className="w-full rounded-lg"
+                    variant={"outline"}
                   >
                     Visit Website <ExternalLinkIcon className="size-4 ml-2" />
-                  </a>
-                </Button>
+                  </Button>
+                </a>
               )}
             </div>
           </div>

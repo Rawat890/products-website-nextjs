@@ -14,13 +14,13 @@ const LiveBadge = () => {
   return (
     <Badge
       variant="outline"
-      className="px-4 py-2 mb-8 text-sm backdrop-blur-sm"
+      className="px-4 py-5 mb-8 text-sm backdrop-blur-sm"
     >
       <span className="relative flex h-2 w-2">
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
         <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
       </span>
-      <span className="text-muted-foreground">
+      <span className="text-muted-foreground text-xl">
         Join thousands of creators sharing their work
       </span>
     </Badge>
@@ -61,22 +61,22 @@ export default function HeroSection() {
             builders, genuine feedback.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
-            <Button size="lg" className="flex items-center gap-2 text-base px-8 shadow-lg"
->
-              <Link href="/submit">
+            <Link href="/submit">
+              <Button size="lg" className="flex items-center gap-2 text-base px-8 shadow-lg"
+              >
                 <SparklesIcon className="size-5" />
                 Share Your Project
-              </Link>
-            </Button>
-            <Button
-              size="lg"
-              className="text-base px-8 shadow-lg"
-              variant="secondary"
-            >
-              <Link href="/explore">
+              </Button>
+            </Link>
+            <Link href="/explore">
+              <Button
+                size="lg"
+                className="text-base px-8 shadow-lg"
+                variant="secondary"
+              >
                 Explore Projects <ArrowRightIcon className="size-5" />
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 max-w-2xl w-full">
