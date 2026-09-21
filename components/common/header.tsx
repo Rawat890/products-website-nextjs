@@ -1,4 +1,6 @@
-import { SignedIn, SignedOut, SignInButton, SignUpButton } from "@clerk/nextjs";
+import { SignInButton, SignUpButton } from "@clerk/nextjs";
+import { Show } from '@clerk/nextjs'
+
 import {
   CompassIcon,
   HomeIcon,
@@ -54,14 +56,14 @@ export default function Header() {
                 </div>
               }
             >
-              <SignedOut>
+              <Show when="signed-out">
                 <SignInButton />
                 <SignUpButton>
                   <Button>Sign Up</Button>
                 </SignUpButton>
-              </SignedOut>
-              <SignedIn>
-                <Button asChild>
+              </Show>
+              <Show when="signed-in">
+                <Button>
                   <Link href="/submit">
                     <SparklesIcon className="size-4" />
                     Submit Project
@@ -69,7 +71,7 @@ export default function Header() {
                 </Button>
 
                 <CustomUserButton />
-              </SignedIn>
+              </Show>
             </Suspense>
           </div>
         </div>
