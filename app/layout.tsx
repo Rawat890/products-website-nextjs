@@ -8,7 +8,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "iBuiltThis - Share Your Creations, Discover New Launches",
+  title: "Creations - Share Your Creations, Discover New Launches",
   description:
     "A community platform for creators to showcase their apps, AI tools, SaaS products, and creative projects. Authentic launches, real builders, genuine feedback.",
 };

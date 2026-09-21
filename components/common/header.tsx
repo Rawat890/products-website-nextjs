@@ -20,7 +20,7 @@ const Logo = () => {
         <SparkleIcon className="size-4 text-primary-foreground" />
       </div>
       <span className="text-xl font-bold">
-        i<span className="text-primary">Built</span>This
+        <span className="text-primary">Creations</span>
       </span>
     </Link>
   );
