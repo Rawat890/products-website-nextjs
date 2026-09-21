@@ -17,7 +17,7 @@ export default async function FeaturedProducts() {
             icon={StarIcon}
             description="Top picks from our community this week"
           />
-          <Button variant="outline" asChild className="hidden sm:flex">
+          <Button variant="outline" className="hidden sm:flex">
             <Link href="/explore">
               View All <ArrowUpRightIcon className="size-4" />
             </Link>
